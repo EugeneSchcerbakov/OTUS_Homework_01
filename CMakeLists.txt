@@ -2,15 +2,15 @@ cmake_minimum_required(VERSION 3.2)
 
 project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
-add_executable(helloworld_ci Source/main.cpp)
+add_executable(helloworld Source/main.cpp)
 
-set_target_properties(helloworld_ci PROPERTIES
+set_target_properties(helloworld PROPERTIES
   CXX_STANDARD 14
   CXX_STANDARD_REQUIRED ON
   COMPILE_OPTIONS -Wpedantic -Wall -Wextra
 )
 
-install(TARGETS helloworld_ci RUNTIME DESTINATION bin)
+install(TARGETS helloworld RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
