@@ -5,6 +5,7 @@ project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 configure_file(Source/version.h.in Source/version.h)
 
 add_executable(helloworld Source/main.cpp)
+add_library(helloworld Source/lib.cpp)
 
 set_target_properties(helloworld PROPERTIES
   CXX_STANDARD 14
