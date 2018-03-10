@@ -20,6 +20,10 @@
 #define PROJECT_VERSION_PATCH 0
 #endif
 
-std::string GetVersionOTUS_Homework();
+std::string GetVersionString();
+
+int GetVersionMajor();
+int GetVersionMinor();
+int GetVersionPatch();
 
 #endif // !LIB_H

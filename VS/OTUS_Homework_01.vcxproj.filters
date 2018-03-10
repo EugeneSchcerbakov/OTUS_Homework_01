@@ -3,6 +3,7 @@
   <ItemGroup>
     <ClCompile Include="..\Source\main.cpp" />
     <ClCompile Include="..\Source\lib.cpp" />
+    <ClCompile Include="..\Source\test_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\lib.h" />

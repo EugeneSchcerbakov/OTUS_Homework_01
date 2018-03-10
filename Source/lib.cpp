@@ -2,9 +2,24 @@
 
 #include <sstream>
 
-std::string GetVersionOTUS_Homework()
+std::string GetVersionString()
 {
 	std::stringstream ss;
-	ss << PROJECT_VERSION_MAJOR << "." << PROJECT_VERSION_MINOR << "." << PROJECT_VERSION_PATCH;
+	ss << GetVersionMajor() << "." << GetVersionMinor() << "." << GetVersionPatch();
 	return ss.str();
+}
+
+int GetVersionMajor()
+{
+	return PROJECT_VERSION_MAJOR;
+}
+
+int GetVersionMinor()
+{
+	return PROJECT_VERSION_MINOR;
+}
+
+int GetVersionPatch()
+{
+	return PROJECT_VERSION_PATCH;
 }
