@@ -1,6 +1,10 @@
 #include "lib.h"
 
-int version()
+#include <sstream>
+
+std::string GetVersionOTUS_Homework()
 {
-	return PROJECT_VERSION_PATCH;
+	std::stringstream ss;
+	ss << PROJECT_VERSION_MAJOR << "." << PROJECT_VERSION_MINOR << "." << PROJECT_VERSION_PATCH;
+	return ss.str();
 }
